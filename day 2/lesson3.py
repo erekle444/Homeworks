@@ -5,4 +5,4 @@ sister = 12
 
 print(father + mother + me + sister)
 
-print(father + me + 10)
+print(me + 10 + father)
