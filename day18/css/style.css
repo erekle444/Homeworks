@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,200&family=Mountains+of+Christmas&display=swap');
+
+p,h1{
+    color:red;
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'Mountains of Christmas';
+    font-style: italic;
+
+    text-decoration-line: overline;
+    text-decoration-color: green;
+    text-decoration-style:wavy;
+}
