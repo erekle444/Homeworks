@@ -1,0 +1,19 @@
+form{
+    text-align: center;
+    font-size: larger;
+    background-color: green;
+}
+
+button{
+    background-color: rgb(30, 125, 40);
+    font-size: medium;
+}
+
+input{
+    font-size: larger;
+}
+
+body{
+    background-color: green;
+}
+
