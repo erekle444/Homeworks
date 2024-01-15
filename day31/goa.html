@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa College Website</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Goa College</h1>
+    </header>
+
+    <nav>
+        <label for="sections">Select Section:</label>
+        <select id="sections" onchange="changeSection(this.value)">
+            <option value="about">About Goa College</option>
+            <option value="videos">College Videos</option>
+            <option value="audio">College Audio</option>
+        </select>
+    </nav>
+
+    <section id="aboutSection">
+        <h2>Introduction to Programming Learning in Goa</h2>
+        <p>
+            Discover the exciting world of programming through our online learning platform based in Goa.
+            Our courses are designed to make learning programming fun and accessible to everyone.
+        </p>
+        <p>
+            Explore the dropdown menu to find more about our programming courses!
+        </p>
+    </section>
+
+    <section id="videosSection" style="display: none;">
+        <h2>goa Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=is-E5vy4x_I&t=7s" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=8nUkGtpgAyk" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="audioSection" style="display: none;">
+        <h2>goa Audio</h2>
+        <audio controls>
+            <source src="https://www.youtube.com/watch?v=3h13SK0Ep70" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <script>
+        function changeSection(section) {
+            document.getElementById("aboutSection").style.display = section === "about" ? "block" : "none";
+            document.getElementById("videosSection").style.display = section === "videos" ? "block" : "none";
+            document.getElementById("audioSection").style.display = section === "audio" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
